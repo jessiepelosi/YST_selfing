@@ -1,5 +1,5 @@
-# Fst Window
-We used **vcftools** to calculate Fst in order to compare relatedness of our sample populations. 
+# Population differentiation (F<sub>ST</sub>)
+We used **vcftools** to calculate F<sub>ST</sub> in order to compare relatedness of our sample populations. 
 
 ```
 vcftools
