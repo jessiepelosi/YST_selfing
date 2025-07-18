@@ -21,13 +21,3 @@ files ending in **.ld_decay_bins**.
 python ld_decay_calc.py -i samples_ld.ld.gz -o samples_Scaffold_1na
 ```
 To plot this data in order to view the linkage decay curve, we read our files ending in **.ld_decay_bins** into **Rstudio**. Packages used include **ggplot2** and **readr**. Finally, we used **ggplot2** to generate a plot with linkage disequilibrium decay. We displayed ld deacy for each chromosome individually using **facet_wrap**. 
-
-```
-# read in data
-samples_ld_bins <- read_tsv("samples_1na.ld_decay_bins", show_col_types = FALSE)
-
-# plot data
-ggplot(samples_ld_bins, aes(distance, avg_R2)) + geom_line() +
-  xlab("Distance (bp)") + ylab(expression(italic(r)^2)) +
-  facet_wrap(~chr)+xlim(0,50000) + geom_smooth()+theme_bw()+theme_bw()
-```
