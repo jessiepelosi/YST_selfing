@@ -1,7 +1,7 @@
 # BLASTp YST against Asteraceae and Arabidopsis
 
 We utilized BLAST (Basic Local Alignment Search Tool) to identify potenital areas of the genome containing proteins believed to be associated with the
-s-locus. We created
+s-locus. 
 
 First we made a database containing all the protein sequences from the Asteraceae and Arabadopsis reference genomes we selected.
 ```
