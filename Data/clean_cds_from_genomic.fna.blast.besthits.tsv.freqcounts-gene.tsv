@@ -1,0 +1,73 @@
+GOSlimTerm	proportion
+DNA binding	2.8158702446991244e-05
+Golgi apparatus	0.0253991496071861
+RNA binding	2.8158702446991244e-05
+anatomical structure development	0.001379776419902571
+biosynthetic process	0.000703967561174781
+carbohydrate metabolic process	0.00016895221468194745
+catabolic process	8.447610734097372e-05
+catalytic activity	0.0005913327513868161
+cell communication	0.0001971109171289387
+cell cycle	0.00016895221468194745
+cell differentiation	0.00011263480978796497
+cell growth	0.00011263480978796497
+cell wall	0.014445414355306507
+cellular component organization	0.0002534283220229212
+cellular protein modification process	0.005040407738011433
+chloroplast	0.2084025568101822
+cytoplasm	0.07836566890997664
+cytoskeleton	2.8158702446991244e-05
+cytosol	0.007631008363134626
+embryo development	0.0005350153464928336
+endoplasmic reticulum	0.00028158702446991245
+endosome	2.8158702446991244e-05
+extracellular region	0.06411736547179905
+flower development	2.8158702446991244e-05
+generation of precursor metabolites and energy	5.631740489398249e-05
+hydrolase activity	8.447610734097372e-05
+kinase activity	0.00016895221468194745
+lipid metabolic process	0.0001971109171289387
+mitochondrion	0.04719398530115732
+multicellular organism development	0.0014642525272435447
+nuclear envelope	0.00014079351223495623
+nucleic acid binding	2.8158702446991244e-05
+nucleobase-containing compound metabolic process	0.0002534283220229212
+nucleolus	0.006701771182383916
+nucleoplasm	8.447610734097372e-05
+nucleotide binding	0.002562441922676203
+nucleus	0.2029116098330189
+other binding	0.004589868498859572
+other cellular components	0.031847492467547096
+other cellular processes	0.006504660265254977
+other intracellular components	0.04525103483231493
+other membranes	0.015121223214034297
+other metabolic processes	0.0058851688114211695
+other molecular functions	2.8158702446991244e-05
+peroxisome	0.0029285050544870894
+photosynthesis	5.631740489398249e-05
+plasma membrane	0.0623715259200856
+plastid	0.06729929884830907
+pollination	0.00011263480978796497
+post-embryonic development	0.0009010784783037198
+protein binding	0.011657702813054375
+protein metabolic process	2.8158702446991244e-05
+reproduction	0.0009573958831977022
+response to abiotic stimulus	0.0005068566440458423
+response to biotic stimulus	2.8158702446991244e-05
+response to chemical	0.0013234590150085885
+response to endogenous stimulus	0.0004786979415988511
+response to external stimulus	0.0002534283220229212
+response to light stimulus	0.00016895221468194745
+response to stress	0.0003660631318108862
+ribosome	0.007264945231323741
+secondary metabolic process	2.8158702446991244e-05
+signal transduction	0.00022526961957592995
+signaling receptor activity	8.447610734097372e-05
+thylakoid	0.02948216146199983
+transferase activity	0.0005350153464928336
+translation	2.8158702446991244e-05
+transport	0.0001971109171289387
+transporter activity	0.00011263480978796497
+tropism	0.00014079351223495623
+unknown cellular components	0.0007321262636217724
+vacuole	0.03252330132627489
