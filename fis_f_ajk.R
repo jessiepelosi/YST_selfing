@@ -30,6 +30,8 @@ get_fis <- function(stat) {
   return(fis)
 }
 
+#Heterozygosity is generated in basic.stats. To view both expected and observed heterozygosity, simply call the population.stat argument
+
 Col.stat <- basic.stats(obj$Col)
 Col.fis <- get_fis(Col.stat)
 
