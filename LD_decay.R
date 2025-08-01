@@ -332,7 +332,7 @@ mean_ld_yre <- yre_ld_bins %>%
   summarize(mean = mean(avg_R2), sd = sd(avg_R2))
 
 #create data frame for pheatmap to plot
-means <- as.data.frame(cbind(mean_ld_des$mean,
+LD_means <- as.data.frame(cbind(mean_ld_des$mean,
                mean_ld_wat$mean,
                mean_ld_col$mean,
                mean_ld_dia$mean,
@@ -350,7 +350,7 @@ means <- as.data.frame(cbind(mean_ld_des$mean,
                mean_ld_vet$mean,
                mean_ld_yre$mean))
 
-colnames(means) <- c("DES",
+colnames(LD_means) <- c("DES",
                     "WAT",
                     "COL",
                     "DIA",
@@ -368,7 +368,7 @@ colnames(means) <- c("DES",
                     "VET",
                     "YRE")
 
-rownames(means) <- c("Chromosome 1",
+rownames(LD_means) <- c("Chromosome 1",
                      "Chromosome 2",
                      "Chromosome 3",
                      "Chromosome 4",
@@ -377,7 +377,7 @@ rownames(means) <- c("Chromosome 1",
                      "Chromosome 7",
                      "Chromosome 8")
 #Plot heatmap
-pheatmap(means,
+pheatmap(LD_means,
          cellwidth = 25,
          cellheight =25,
          border_color = NA,
