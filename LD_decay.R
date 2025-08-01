@@ -11,6 +11,8 @@ library(dplyr)
 library(readr)
 library(pheatmap)
 library(viridis)
+library(gridExtra)
+library(ggplotify)
 
 ###DES
 #set path and read in data
@@ -377,9 +379,9 @@ rownames(LD_means) <- c("Chromosome 1",
                      "Chromosome 7",
                      "Chromosome 8")
 #Plot heatmap
-pheatmap(LD_means,
-         cellwidth = 25,
-         cellheight =25,
+LD_heatmap<- pheatmap(LD_means,
+         cellwidth = 40,
+         cellheight =40,
          border_color = NA,
          fontsize = 8,
          cluster_rows = F,
@@ -390,3 +392,36 @@ pheatmap(LD_means,
          fontsize_number = 9,
          angle_col = 0
 )
+
+#Plot DES chr 
+wat_CHR3 <-wat_ld_bins %>%
+  filter(chr == "b'Scaffold_3'")
+
+wat_CHR3_plot <- ggplot(wat_CHR3, aes(distance, avg_R2)) +
+  geom_line() +
+  xlab("Distance (bp)") +
+  ylab(expression(italic(r)^2)) +
+  xlim(0,50000)+
+  geom_smooth(method = "lm")+
+  theme_bw()
+
+#Plot YRE chr 
+yre_CHR3 <-yre_ld_bins %>%
+  filter(chr == "b'Scaffold_3'")
+
+yre_CHR3_plot <- ggplot(yre_CHR3, aes(distance, avg_R2)) +
+  geom_line() +
+  xlab("Distance (bp)") +
+  ylab(expression(italic(r)^2))+
+  xlim(0,50000)+
+  geom_smooth(method = "lm")+
+  theme_bw()
+
+#arrange plots
+chr_plots<-grid.arrange(wat_CHR3_plot,
+                        yre_CHR3_plot,
+                        ncol = 2) 
+
+LD_heatmap_grob <- as.grob(LD_heatmap)
+grid.arrange(chr_plots, LD_heatmap_grob)
+
