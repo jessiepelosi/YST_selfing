@@ -66,7 +66,6 @@ pheatmap(all_genes_gg_residuals,
          col = viridis(20),
          angle_col = "45",
          display_numbers = F,
-         main ="GOSlim Heatmap",
-         gaps_row = c(1,70,71)
+         main ="GOSlim Heatmap"
          )
 
