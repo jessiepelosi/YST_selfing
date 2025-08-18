@@ -394,10 +394,10 @@ LD_heatmap<- pheatmap(LD_means,
 )
 
 #Plot DES chr 
-wat_CHR3 <-wat_ld_bins %>%
+des_CHR3 <-des_ld_bins %>%
   filter(chr == "b'Scaffold_3'")
 
-wat_CHR3_plot <- ggplot(wat_CHR3, aes(distance, avg_R2)) +
+des_CHR3_plot <- ggplot(des_CHR3, aes(distance, avg_R2)) +
   geom_line() +
   xlab("Distance (bp)") +
   ylab(expression(italic(r)^2)) +
@@ -418,7 +418,7 @@ yre_CHR3_plot <- ggplot(yre_CHR3, aes(distance, avg_R2)) +
   theme_bw()
 
 #arrange plots
-chr_plots<-grid.arrange(wat_CHR3_plot,
+chr_plots<-grid.arrange(des_CHR3_plot,
                         yre_CHR3_plot,
                         ncol = 2) 
 
