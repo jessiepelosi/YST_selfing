@@ -79,3 +79,6 @@ write.table(wat_fst_pi_sig_col123,"wat_fstpi_sig_windows",
             quote = F,
             sep = "\t"
 )
+
+#Calculate window overlaps
+overlaps <- inner_join(des_fst_pi_sig_col123,wat_fst_pi_sig_col123)
