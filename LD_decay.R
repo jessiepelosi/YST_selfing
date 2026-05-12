@@ -1,8 +1,7 @@
 ############
 #Linkage Disequilibrium Decay
-#Centaurea sol. California Invasion 
-#Taylor Curry, Abby Peasrse, Jessie Pelosi
-#June 6, 2025
+# Centaurea sol. California Invasion 
+# Taylor Curry, Abby Peasrse, Jessie Pelosi
 ##########
 
 library(ggplot2)
@@ -16,7 +15,7 @@ library(ggplotify)
 
 ###DES
 #set path and read in data
-des_ld_bins <- read_tsv("des_1na.ld_decay_bins", show_col_types = FALSE)
+des_ld_bins <- read_tsv("data/des_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(des_ld_bins, aes(distance, avg_R2)) +
   geom_line() +
@@ -31,7 +30,7 @@ ggplot(des_ld_bins, aes(distance, avg_R2)) +
 
 ###WAT
 # set path and read in data
-wat_ld_bins <- read_tsv("wat_1na.ld_decay_bins", show_col_types = FALSE)
+wat_ld_bins <- read_tsv("data/wat_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(wat_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -46,7 +45,7 @@ ggplot(wat_ld_bins, aes(distance, avg_R2)) +
 
 ####COL
 #set path and read in data
-col_ld_bins <- read_tsv("col_Scaffold_1.ld_decay_bins", show_col_types = FALSE)
+col_ld_bins <- read_tsv("data/col_Scaffold_1.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(col_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -61,7 +60,7 @@ ggplot(col_ld_bins, aes(distance, avg_R2)) +
 
 ###DIA
 #set path and read in data
-dia_ld_bins <- read_tsv("dia_1na.ld_decay_bins", show_col_types = FALSE)
+dia_ld_bins <- read_tsv("data/dia_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(dia_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -75,7 +74,7 @@ ggplot(dia_ld_bins, aes(distance, avg_R2)) +
 
 ###GIL
 #set path and read in data
-gil_ld_bins <- read_tsv("gil_1na.ld_decay_bins", show_col_types = FALSE)
+gil_ld_bins <- read_tsv("data/gil_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(gil_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -90,7 +89,7 @@ ggplot(gil_ld_bins, aes(distance, avg_R2)) +
 
 ###GOL
 #set path and read in data
-gol_ld_bins <- read_tsv("gol_1na.ld_decay_bins", show_col_types = FALSE)
+gol_ld_bins <- read_tsv("data/gol_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(gol_ld_bins, aes(distance, avg_R2)) +
   geom_line() +
@@ -105,7 +104,7 @@ ggplot(gol_ld_bins, aes(distance, avg_R2)) +
 
 ###LEB
 #set path and read in data
-leb_ld_bins <- read_tsv("leb_1na.ld_decay_bins", show_col_types = FALSE)
+leb_ld_bins <- read_tsv("data/leb_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(leb_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -119,7 +118,7 @@ ggplot(leb_ld_bins, aes(distance, avg_R2)) +
 
 ###NEE
 #set path and read in data
-Nee_ld_bins <- read_tsv("nee_1na.ld_decay_bins", show_col_types = FALSE)
+Nee_ld_bins <- read_tsv("data/nee_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(Nee_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -134,7 +133,7 @@ ggplot(Nee_ld_bins, aes(distance, avg_R2)) +
 
 ###ORC
 #set path and read in data
-orc_ld_bins <- read_tsv("orc_1na.ld_decay_bins", show_col_types = FALSE)
+orc_ld_bins <- read_tsv("data/orc_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(orc_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -148,7 +147,7 @@ ggplot(orc_ld_bins, aes(distance, avg_R2)) +
 
 ###ORO
 #set path and read in data
-oro_ld_bins <- read_tsv("oro_1na.ld_decay_bins", show_col_types = FALSE)
+oro_ld_bins <- read_tsv("data/oro_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(oro_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -163,7 +162,7 @@ ggplot(oro_ld_bins, aes(distance, avg_R2)) +
 
 ###RB
 #set path and read in data
-rb_ld_bins <- read_tsv("rb_1na.ld_decay_bins", show_col_types = FALSE)
+rb_ld_bins <- read_tsv("data/rb_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(rb_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -178,7 +177,7 @@ ggplot(rb_ld_bins, aes(distance, avg_R2)) +
 
 ###RES
 #set path and read in data
-res_ld_bins <- read_tsv("res_1naa.ld_decay_bins", show_col_types = FALSE)
+res_ld_bins <- read_tsv("data/res_1naa.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(res_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -192,7 +191,7 @@ ggplot(res_ld_bins, aes(distance, avg_R2)) +
 
 ###SIE
 #set path and read in data
-sie_ld_bins <- read_tsv("sie_1na.ld_decay_bins", show_col_types = FALSE)
+sie_ld_bins <- read_tsv("data/sie_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(sie_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -207,7 +206,7 @@ ggplot(sie_ld_bins, aes(distance, avg_R2)) +
 
 ###TRI
 #set path and read in data
-tri_ld_bins <- read_tsv("tri_1na.ld_decay_bins", show_col_types = FALSE)
+tri_ld_bins <- read_tsv("data/tri_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(tri_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -221,7 +220,7 @@ ggplot(tri_ld_bins, aes(distance, avg_R2)) +
 
 ###UKI
 #set path and read in data
-uki_ld_bins <- read_tsv("uki_1na.ld_decay_bins", show_col_types = FALSE)
+uki_ld_bins <- read_tsv("data/uki_1na.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(uki_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -236,7 +235,7 @@ ggplot(uki_ld_bins, aes(distance, avg_R2)) +
 
 ###VET
 #set path and read in data
-vet_ld_bins <- read_tsv("vet_1nad.ld_decay_bins", show_col_types = FALSE)
+vet_ld_bins <- read_tsv("data/vet_1nad.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(vet_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
@@ -251,7 +250,7 @@ ggplot(vet_ld_bins, aes(distance, avg_R2)) +
 
 ###YRE
 #set path and read in data
-yre_ld_bins <- read_tsv("yre_1nad.ld_decay_bins", show_col_types = FALSE)
+yre_ld_bins <- read_tsv("data/yre_1nad.ld_decay_bins", show_col_types = FALSE)
 # plot LD decay
 ggplot(yre_ld_bins, aes(distance, avg_R2)) + 
   geom_line() +
